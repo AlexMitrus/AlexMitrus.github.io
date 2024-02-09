@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.pinball-machine {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+#section1 {
+    background-color: #ff5733;
+}
+
+#section2 {
+    background-color: #33ff57;
+}
+
+#section3 {
+    background-color: #5733ff;
+}
