@@ -1,31 +1,67 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.pinball-machine {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
 }
 
-.section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: #fff;
+header, section, footer {
+  padding: 20px;
+  text-align: center;
 }
 
-#section1 {
-    background-color: #ff5733;
+h1 {
+  font-size: 2em;
+  color: #ffcc00;
 }
 
-#section2 {
-    background-color: #33ff57;
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ffcc00;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-#section3 {
-    background-color: #5733ff;
+.details {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.details div {
+  flex-basis: 30%;
+}
+
+.contact form {
+  text-align: left;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.contact button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.map {
+  background-color: #333;
+  height: 200px;
+  color: #fff;
+  padding-top: 50px;
 }
