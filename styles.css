@@ -48,6 +48,12 @@ a {
         padding: 10px 20px;
     }
 
+@media screen and (max-width: 500px) {
+    .header-menu {
+        height:125px;
+    }
+}
+
 .logo-link {
     text-decoration: none;
     color: rgb(26, 190, 245);
@@ -74,9 +80,22 @@ a {
         color: #fff;
     }
 
+@media screen and (max-width: 500px) {
+    .button-link {
+        float: none;
+        margin:0 0 0 150px;
+    }
+}
+
 .container {
     padding-top:100px;
     background-color: rgb(226 232 253);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding-top: 163px;
+    }
 }
 
 .main-video {
@@ -292,3 +311,9 @@ a {
             display: inline-block;
             padding: 10px 20px;
         }
+
+@media screen and (max-width: 500px) {
+    .foot .foot-menu a {
+        padding: 5px 10px;
+    }
+}
