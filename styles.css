@@ -1,67 +1,294 @@
+:root {
+    --width: 600px;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-booking {
+    padding: 10px;
+    width: 100%;
+    height: 23px;
+    background-color: rgb(26, 190, 245);
+}
+
+    .header-booking h1 {
+        margin: 3px;
+        padding: 0px;
+        text-align: center;
+        padding: 0px;
+        font-size: 12pt;    
+        color: #000000;
+    }
+
+.header-menu {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(0, 47, 89);
+    overflow: hidden;
+}
+    .header-menu a {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+.logo-link {
+    text-decoration: none;
+    color: rgb(26, 190, 245);
+    float: left;
+    margin: 2px 0 0 30px;
+    font-size: 40px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+}
+
+.button-link {
+    background-color: rgb(26, 190, 245);
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin: 17px 30px 0 0;
+    transition: transform 0.3s ease;
+}
+
+    .button-link:hover {
+        transform: scale(1.1);
+        background-image: linear-gradient(to left, #fe3131, rgb(26, 190, 245));
+        color: #fff;
+    }
+
 .container {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  background-color: #1a1a1a;
-  color: white;
-  padding: 20px;
+    padding-top:100px;
+    background-color: rgb(226 232 253);
 }
 
-header, section, footer {
-  padding: 20px;
-  text-align: center;
+.main-video {
+    width: 100%;
+    max-width: 100%;
+    max-height: 600px;
+    overflow: hidden;
 }
 
-h1 {
-  font-size: 2em;
-  color: #ffcc00;
+    .main-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.main-img {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
-h2 {
-  font-size: 1.5em;
-  border-bottom: 1px solid #ffcc00;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+@media screen and (max-width: 500px) {
+    .main-img {
+        height: 200px;
+    }
 }
 
-.details {
-  display: flex;
-  justify-content: space-around;
-  text-align: left;
+    .main-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+.what-is {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 80px auto;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.details div {
-  flex-basis: 30%;
+@media screen and (max-width: 500px) {
+    .what-is {
+        margin: 0;
+    }
 }
 
-.contact form {
-  text-align: left;
+    .what-is h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .what-is p {
+        font-size: 20px;
+    }
+
+.how-it-works {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 80px auto;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.contact input, .contact textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: none;
+    .how-it-works h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .how-it-works p {
+        font-size: 20px;
+    }
+
+
+    .how-it-works .images-pixel {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .how-it-works .images-pixel .row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+
+            .how-it-works .images-pixel .row .item-img {
+                width: 80px;
+                display: flex;
+                align-items: center;
+            }
+
+                .how-it-works .images-pixel .row .item-img img {
+                    width: 75%;
+                }
+
+            .how-it-works .images-pixel .row .item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+
+                .how-it-works .images-pixel .row .item p {
+                    width: 100%;
+                    margin: 0;
+                }
+
+.booking {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 80px auto;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.contact button {
-  background-color: #ffcc00;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1em;
+    .booking h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .booking p {
+        font-size: 20px;
+    }
+
+.contact {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 80px auto;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.map {
-  background-color: #333;
-  height: 200px;
-  color: #fff;
-  padding-top: 50px;
+    .contact h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .contact p {
+        font-size: 20px;
+    }
+
+    .contact .row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+        .contact .row .item-img {
+            width: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+            .contact .row .item-img img {
+                width: 75%;
+            }
+
+        .contact .row .item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+            .contact .row .item p {
+                width: 100%;
+                margin: 0;
+            }
+
+.location {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 80px auto auto auto;
+    max-width: 100%;
+    padding: 0 0 40px 0;
+    box-sizing: border-box;
 }
+
+    .location h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .location p {
+        font-size: 20px;
+    }
+
+.foot {
+    width: 100%;
+}
+
+    .foot .foot-menu {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 75px;
+        background-color: rgb(0, 47, 89);
+        overflow: hidden;
+    }
+
+        .foot .foot-menu .social img {
+            padding: 10px 0 0 10px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .foot .foot-menu a {
+            display: inline-block;
+            padding: 10px 20px;
+        }
