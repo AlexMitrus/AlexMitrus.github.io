@@ -274,6 +274,10 @@ a {
     .contact .row {
         display:block;
     }
+
+        .contact .row .item-img {
+            width: 65px;
+        }
 }
 
 .location {
