@@ -191,61 +191,23 @@ a {
         font-size: 20px;
     }
 
-.faqs-list {
+.faqs {
     font-family: Arial, Helvetica, sans-serif;
     width: 1000px;
-    margin: 80px auto;
+    margin: 80px auto auto auto;
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 0 40px 0;
     box-sizing: border-box;
 }
 
-    .faqs-list h1 {
+    .faqs h1 {
         font-size: 40px;
         font-weight: bold;
     }
 
-    .faqs-list p {
+    .faqs p {
         font-size: 20px;
     }
-
-
-    .faqs-list .faq {
-        margin: 20px;
-    }
-
-    .faqs-list .question {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin-bottom: 10px;
-        position: relative;
-        height: auto;
-    }
-
-    .faqs-list .button-expand {
-        background-color: #ccc;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        right: 10px;
-    }
-
-    .faqs-list .answer {
-        /*display: none;*/
-        overflow: hidden;
-        transition: height 0.3s ease;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        padding: 10px;
-        height: auto;
-    }
-
-        .faqs-list .answer p {
-            margin: 0;
-        }
 
 .contact {
     font-family: Arial, Helvetica, sans-serif;
@@ -401,8 +363,26 @@ a {
         background-color: #ddd;
     }
 
+.texto-legal {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin: 80px auto auto auto;
+    max-width: 100%;
+    padding: 0 0 40px 0;
+    box-sizing: border-box;
+}
+
+    .texto-legal h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .texto-legal p {
+        font-size: 20px;
+    }
+
 @media screen and (max-width: 374px) {
-/* Estilos para dispositivos móviles */
+    /* Estilos para dispositivos móviles */
     .header-menu {
         height: 125px;
     }
