@@ -72,7 +72,7 @@
                         <p>Sortea obstáculos y enemigos en tu camino hacia la victoria mientras te enfrentas a desafíos emocionantes.</p>
                     </div>
                 </div>
-                <div class="row" id="Reservas">
+                <div class="row">
                     <div class="item-img">
                         <img src="https://raw.githubusercontent.com/AlexMitrus/AlexMitrus.github.io/main/media/winner.png" alt="Imagen podio pixel">
                     </div>
@@ -82,58 +82,14 @@
                 </div>
             </div>
         </section>
+        <section class="faqs-list">
+            <h1 id="Reservas">Preguntas Frecuentes</h1>
+            <a href="preguntas-frecuentes.html" target="_blank" class="politicas" ><p>¿Tienes dudas? Resuelvelas aquí.</p></a>
+        </section>
         <section class="booking">
             <h1>Reserva</h1>
             <p>¿Quieres celebrar un cumpleaños o un evento? <a href="#Contacto" class="contact-hover">¡Escribenos!</a></p>
             <div class="load-turitop" data-service="P1" data-lang="es" data-embed="box"></div>
-        </section>
-        <section class="faqs-list">
-            <h1>Preguntas Frecuentes</h1>
-
-            <div class="faq">
-                <div class="question">
-                    <h3>¿Que es The Grid?</h3>
-                    <button class="button-expand">+</button>
-                    <div class="answer">
-                        <p>
-                            The Grid es un juego interactivo que ofrece más de 600 baldosas LED sensibles al tacto y botones luminosos en la pared que requieren una combinación de velocidad, coordinación mano-ojo y comunicación.
-                            A medida que las baldosas cobran vida, tu objetivo es pisar o evitar algunas de ellas para completar el nivel.
-                        </p>
-                    </div>
-                </div>                
-            </div>
-
-            <!--<div class="faqs-list">
-                <div class="row">
-                    <div class="item">
-                        <h2>¿Que es The Grid?</h2>
-                        <p>
-                            The Grid es un juego interactivo que ofrece más de 600 baldosas LED sensibles al tacto y botones luminosos en la pared que requieren una combinación de velocidad, coordinación mano-ojo y comunicación.
-                            A medida que las baldosas cobran vida, tu objetivo es pisar o evitar algunas de ellas para completar el nivel.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="item">
-                        <p>Embárcate en una emocionante aventura con nuestro Modo Aventura, donde cada paso te acerca más a la victoria.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="item">
-                        <p>Personaliza la dificultad a tu gusto y desafía tus habilidades con nuestro sistema de niveles ajustables.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="item">
-                        <p>Sortea obstáculos y enemigos en tu camino hacia la victoria mientras te enfrentas a desafíos emocionantes.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="item">
-                        <p>Supera todos los desafíos y alcanza la cima del podio como el campeón indiscutible.</p>
-                    </div>
-                </div>
-            </div>-->
         </section>
         <section class="contact" id="Contacto">
             <h1>Contacto</h1>
@@ -185,25 +141,6 @@
             var cookieBanner = document.getElementById("cookie-banner");
             acceptButton.addEventListener("click", function () {
                 cookieBanner.style.display = "none";
-            });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var toggleButtons = document.querySelectorAll(".toggle-answer");
-
-            toggleButtons.forEach(function (button) {
-                button.addEventListener("click", function () {
-                    var answer = button.parentElement.querySelector(".answer");
-                    if (answer.style.height === "auto" || answer.style.height === "") {
-                        answer.style.display = "none"
-                        answer.style.height = "0";
-                        button.textContent = "+";
-                    } else {
-                        answer.style.display = "block"
-                        answer.style.height = "auto";
-                        button.textContent = "-";
-                    }
-                });
             });
         });
     </script>
