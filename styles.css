@@ -633,6 +633,10 @@ a {
             object-fit: cover;
         }
 
+    .contact p {
+        font-size: 15px;
+    }
+
     .foot .foot-payments-social .foot-payments-social-head-groupleft {
         width: 48%;
     }
