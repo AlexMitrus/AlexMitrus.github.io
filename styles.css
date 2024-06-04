@@ -66,6 +66,12 @@ a {
         color: rgb(52, 67, 249);
     }
 
+.header-menu-line {
+    background-color: rgb(52, 67, 249);
+    height: 40px;
+    width: 100%;
+}
+
 .booking-button {
     text-decoration: none;
     border: none;
