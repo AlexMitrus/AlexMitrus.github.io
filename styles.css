@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Azonix';
+    src: url('https://github.com/AlexMitrus/AlexMitrus.github.io/blob/main/media/Azonix.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
 }
 
 a {
@@ -9,17 +16,11 @@ a {
     text-decoration: inherit;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 .header-booking {
     padding: 10px;
     width: 100%;
     height: 23px;
-    background-color: rgb(26, 190, 245);
+    background-color: rgb(52, 67, 249);
 }
 
     .header-booking h1 {
@@ -28,84 +29,79 @@ a {
         text-align: center;
         padding: 0px;
         font-size: 12pt;
-        color: #000000;
+        color: #fff;
     }
+
+.header-booking-dto {
+    color: rgb(253,230,26)
+}
 
 .header-menu {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 75px;
-    background-color: rgb(0, 47, 89);
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    background-color: rgb(226 232 253);
 }
 
-    .header-menu a {
-        display: inline-block;
-        padding: 10px 20px;
+.header-menu-logo {
+    width: auto;
+    height: 100px;
+}
+
+.header-menu-text {
+    font-family: "Azonix", Azonix;
+    margin-right: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    transition: transform 0.5s ease;
+}
+
+    .header-menu-text:hover {
+        transform: scale(1.1);
+        color: rgb(52, 67, 249);
     }
 
-.logo-link {
+.booking-button {
     text-decoration: none;
-    color: rgb(26, 190, 245);
-    float: left;
-    margin: 2px 0 0 30px;
-    font-size: 40px;
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-}
-
-.button-link {
-    background-color: rgb(26, 190, 245);
-    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-family: "Azonix", Azonix;
+    background-color: rgb(52, 67, 249);
+    color: #fff;
     font-weight: bold;
-    float: right;
-    margin: 17px 30px 0 0;
-    transition: transform 0.3s ease;
+    padding: 10px 20px;
+    transition: transform 0.5s ease;
 }
 
-    .button-link:hover {
-        transform: scale(1.1);
-        background-image: linear-gradient(to left, #fe3131, rgb(26, 190, 245));
+    .booking-button:hover {
+        transform: scale(1.2);
+        background-image: linear-gradient(to left, rgb(253,230,26), rgb(52, 67, 249));
         color: #fff;
     }
 
 .container {
-    padding-top: 100px;
     background-color: rgb(226 232 253);
 }
 
-.main-video {
+.main-img {
     width: 100%;
-    max-width: 100%;
-    max-height: 600px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-    .main-video video {
+    .main-img img {
+        height: 600px;
         width: 100%;
-        height: 100%;
+        max-width: 100%;
         object-fit: cover;
     }
 
-.main-img {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.main-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
 .what-is {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     width: 1000px;
     margin: 80px auto;
     max-width: 100%;
@@ -113,17 +109,21 @@ a {
     box-sizing: border-box;
 }
 
-.what-is h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
+    .what-is h1 {
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
+    }
+
+    .what-is h3 {
+        font-family: "Azonix", Azonix;
+    }
 
 .what-is p {
     font-size: 20px;
 }
 
 .how-it-works {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     width: 1000px;
     margin: 80px auto;
     max-width: 100%;
@@ -132,13 +132,24 @@ a {
 }
 
     .how-it-works h1 {
-        font-size: 40px;
-        font-weight: bold;
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
+    }
+
+    .how-it-works h3 {
+        font-family: "Azonix", Azonix;
     }
 
     .how-it-works p {
         font-size: 20px;
     }
+
+    .how-it-works ul {
+        font-family: "Kumbh Sans", sans-serif;
+    }
+        .how-it-works ul li {
+            padding-bottom: 5px;
+        }
 
 
     .how-it-works .images-pixel {
@@ -174,7 +185,7 @@ a {
                 }
 
 .booking {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     width: 1000px;
     margin: 80px auto;
     max-width: 100%;
@@ -183,8 +194,8 @@ a {
 }
 
     .booking h1 {
-        font-size: 40px;
-        font-weight: bold;
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
     }
 
     .booking p {
@@ -192,7 +203,7 @@ a {
     }
 
 .faqs {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     width: 1000px;
     margin: 80px auto auto auto;
     max-width: 100%;
@@ -201,8 +212,8 @@ a {
 }
 
     .faqs h1 {
-        font-size: 40px;
-        font-weight: bold;
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
     }
 
     .faqs p {
@@ -210,7 +221,7 @@ a {
     }
 
 .faqs-list {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     width: 1000px;
     margin: 80px auto auto auto;
     max-width: 100%;
@@ -219,8 +230,8 @@ a {
 }
 
     .faqs-list h1 {
-        font-size: 40px;
-        font-weight: bold;
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
     }
 
     .faqs-list p {
@@ -228,7 +239,7 @@ a {
     }
 
 .contact {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     width: 1000px;
     margin: 80px auto;
     max-width: 100%;
@@ -237,8 +248,8 @@ a {
 }
 
     .contact h1 {
-        font-size: 40px;
-        font-weight: bold;
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
     }
 
     .contact p {
@@ -276,18 +287,18 @@ a {
         font-weight: bold;
     }
 
-    .location {
-        font-family: Arial, Helvetica, sans-serif;
-        width: 1000px;
-        margin: 80px auto auto auto;
-        max-width: 100%;
-        padding: 0 0 40px 0;
-        box-sizing: border-box;
-    }
+.location {
+    font-family: "Kumbh Sans", sans-serif;
+    width: 1000px;
+    margin: 80px auto auto auto;
+    max-width: 100%;
+    padding: 0 0 40px 0;
+    box-sizing: border-box;
+}
 
     .location h1 {
-        font-size: 40px;
-        font-weight: bold;
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
     }
 
     .location p {
@@ -382,7 +393,7 @@ a {
     }
 
 .texto-legal {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     width: 1000px;
     margin: 80px auto auto auto;
     max-width: 100%;
@@ -391,8 +402,8 @@ a {
 }
 
     .texto-legal h1 {
-        font-size: 40px;
-        font-weight: bold;
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
     }
 
     .texto-legal p {
