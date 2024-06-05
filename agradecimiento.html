@@ -23,13 +23,13 @@
         var product_name = getParameterByName('product_name');
         var booking_id = getParameterByName('booking_id');
         var client_name = getParameterByName('client_name');
-        var price = getParameterByName('price');
+        var price = getParameterByName('total');
 
         window.onload = function() {
             document.getElementById('product_name').innerText = product_name;
             document.getElementById('booking_id').innerText = booking_id;
             document.getElementById('client_name').innerText = client_name;
-            document.getElementById('price').innerText = price;
+            document.getElementById('total').innerText = total;
         };</script>
 </head>
 <body>
@@ -61,7 +61,7 @@
             <p>Te hemos enviado un email con toda la información</p>
             <p>Juego: <span id="product_name"></span></p>
             <p>Nº de reserva: <span id="booking_id"></span></p>
-            <p>Total: <span id="price"></span>€</p>
+            <p>Total: <span id="total"></span>€</p>
         </div>
     </section>
 
