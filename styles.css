@@ -329,9 +329,13 @@ a {
                 margin: 0;
             }
 
-    .contact-hover:hover {
-        font-weight: bold;
-    }
+.contact-hover{
+    color: deepskyblue;
+}
+
+.contact-hover:hover {
+    font-weight: bold;
+}
 
 .location {
     font-family: "Kumbh Sans", sans-serif;
