@@ -9,6 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        var product_name = getParameterByName('product_name');
+        var booking_id = getParameterByName('booking_id');
+        var client_name = getParameterByName('client_name');
+        var price = getParameterByName('price');
+
+        window.onload = function() {
+            document.getElementById('product_name').innerText = product_name;
+            document.getElementById('booking_id').innerText = booking_id;
+            document.getElementById('client_name').innerText = client_name;
+            document.getElementById('price').innerText = price;
+        };</script>
 </head>
 <body>
     <div class="header-menu">
@@ -34,7 +56,13 @@
     <div class="header-menu-line"></div>
 
     <section class="container">
-        <p>GRACIAS</p>
+        <div class="gratitude-text">
+            <h1>Gracias por tu compra <span id="client_name"></span></h1>
+            <p>Te hemos enviado un email con toda la información</p>
+            <p>Juego: <span id="product_name"></span></p>
+            <p>Nº de reserva: <span id="booking_id"></span></p>
+            <p>Total: <span id="price"></span>€</p>
+        </div>
     </section>
 
     <section class="foot">
