@@ -10,6 +10,7 @@ body, html {
     padding: 0;
     font-family: "Kumbh Sans", sans-serif;
     background-color: rgb(226 232 253);
+    text-align: justify;
 }
 
 a {
@@ -129,9 +130,9 @@ a {
         font-family: "Azonix", Azonix;
     }
 
-.what-is p {
-    font-size: 20px;
-}
+    .what-is p {
+        font-size: 20px;   
+    }
 
 .how-it-works {
     font-family: "Kumbh Sans", sans-serif;
@@ -255,6 +256,29 @@ a {
     }
 
     .faqs-list p {
+        font-size: 20px;
+    }
+
+.terminos-y-condiciones {
+    font-family: "Kumbh Sans", sans-serif;
+    width: 1000px;
+    margin: 40px auto auto auto;
+    max-width: 100%;
+    padding: 0 0 40px 0;
+    box-sizing: border-box;
+}
+
+    .terminos-y-condiciones h1 {
+        font-family: "Azonix", Azonix;
+        font-size: 30px;
+    }
+
+    .terminos-y-condiciones h2 {
+        font-family: "Azonix", Azonix;
+        font-size: 20px;
+    }
+
+    .terminos-y-condiciones p {
         font-size: 20px;
     }
 
