@@ -232,9 +232,17 @@ a {
     box-sizing: border-box;
 }
 
+    .faqs .faqs-cuadro {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
     .faqs h1 {
         font-family: "Azonix", Azonix;
         font-size: 30px;
+        text-align: center;
     }
 
     .faqs p {
@@ -264,7 +272,7 @@ a {
     width: 1000px;
     margin: 40px auto auto auto;
     max-width: 100%;
-    padding: 0 0 40px 0;
+    padding: 0 15px 0 15px;
     box-sizing: border-box;
 }
 
@@ -498,7 +506,7 @@ a {
     width: 1000px;
     margin: 40px auto auto auto;
     max-width: 100%;
-    padding: 0 0 40px 0;
+    padding: 0 15px 0 15px;
     box-sizing: border-box;
 }
 
@@ -521,6 +529,28 @@ a {
 
     .gratitude-text p {
         font-family: "Kumbh Sans", sans-serif;
+    }
+
+/* Estilo del botón de subir al inicio */
+.scroll-to-top {
+    font-family: "Azonix", Azonix;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Oculto por defecto */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Forma circular */
+    padding: 10px 15px; /* Padding alrededor del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+    /* Muestra el botón cuando se añade la clase 'show' */
+    .scroll-to-top.show {
+        display: block;
     }
 
 @media screen and (max-width: 374px) {
@@ -568,6 +598,10 @@ a {
         align-items: center;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .header-menu-line {
+        height: 0px;
     }
 
     .booking-button {
@@ -657,6 +691,10 @@ a {
         box-sizing: border-box;
     }
 
+    .header-menu-line {
+        height: 0px;
+    }
+
     .booking-button {
         flex: 1;
         text-align: center;
@@ -737,6 +775,10 @@ a {
         align-items: center;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .header-menu-line {
+        height: 0px;
     }
 
     .booking-button {
