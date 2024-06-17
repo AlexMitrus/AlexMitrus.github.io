@@ -1,7 +1,7 @@
-// Selecciona el bot髇
+// Selecciona el bot贸n
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-// Funci髇 para mostrar el bot髇 cuando se hace scroll hacia abajo
+// Funci贸n para mostrar el bot贸n cuando se hace scroll hacia abajo
 function toggleScrollToTopBtn() {
     if (window.scrollY > 300) {
         scrollToTopBtn.classList.add('show');
@@ -10,7 +10,7 @@ function toggleScrollToTopBtn() {
     }
 }
 
-// Funci髇 para desplazar suavemente hacia arriba
+// Funci贸n para desplazar suavemente hacia arriba
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -18,8 +18,23 @@ function scrollToTop() {
     });
 }
 
-// A馻de un evento de scroll para mostrar/ocultar el bot髇
+// A帽ade un evento de scroll para mostrar/ocultar el bot贸n
 window.addEventListener('scroll', toggleScrollToTopBtn);
 
-// A馻de un evento de clic para el bot髇
+// A帽ade un evento de clic para el bot贸n
 scrollToTopBtn.addEventListener('click', scrollToTop);
+
+
+// Selecciona el video
+const video = document.getElementById('main-video');
+
+// Especifica el tiempo en segundos en el que deseas detener el video
+const stopTime = 20; // Detener el video a los 10 segundos
+
+// A帽ade un evento de timeupdate al video
+video.addEventListener('timeupdate', function () {
+    if (video.currentTime >= stopTime) {
+        video.pause();
+        video.currentTime = stopTime; // Opcional: Esto asegura que el video se mantenga en el tiempo especificado
+    }
+});
