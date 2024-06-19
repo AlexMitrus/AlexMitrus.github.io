@@ -24,17 +24,3 @@ window.addEventListener('scroll', toggleScrollToTopBtn);
 // Añade un evento de clic para el botón
 scrollToTopBtn.addEventListener('click', scrollToTop);
 
-
-// Selecciona el video
-const video = document.getElementById('main-video');
-
-// Especifica el tiempo en segundos en el que deseas detener el video
-const stopTime = 20; // Detener el video a los 10 segundos
-
-// Añade un evento de timeupdate al video
-video.addEventListener('timeupdate', function () {
-    if (video.currentTime >= stopTime) {
-        video.pause();
-        video.currentTime = stopTime; // Opcional: Esto asegura que el video se mantenga en el tiempo especificado
-    }
-});
