@@ -605,7 +605,7 @@ there.
 @media (min-width: 400px) {
     video {
         top: 0;
-        margin: 5% 15%;
+        margin: 25px 0 10px 20px;
     }
 
     .gameplay .block {
