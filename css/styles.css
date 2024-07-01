@@ -67,27 +67,27 @@ Sample styling
 
 .ghost {
     background-color: rgb(255, 250, 255);
-/ / #FFFAFF color: #0D0426;
+    /*color: #0D0426;*/
 }
 
 .neon-violet {
     background-color: rgb(52, 67, 249);
-/ / #3443F9 color: #0D0426;
+    /*color: #0D0426;*/
 }
 
 .yellow {
     background-color: rgb(253, 230, 26);
-/ / #FDE61A color: #0D0426;
+    /*color: #0D0426;*/
 }
 
 .orange {
     background-color: rgb(255, 105, 18);
-/ / #FF6912 color: #FF6912;
+    /*color: #FF6912;*/
 }
 
 .black {
-    background-color: rgb(10.9 .8);
-/ / #0A0908 color: #fff;
+    background-color: rgb(10,9,8);
+    /*#0A0908 color: #fff;*/
 }
 
 .cool-gray {
@@ -207,7 +207,7 @@ button.dark:hover {
 }
 
 .header-logoimg {
-    width: 500px;
+    width: 100%;
     height: auto;
     padding: 10px 0 10px 0;
 }
@@ -264,8 +264,8 @@ button.dark:hover {
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-    opacity 0.55s ease;
+    /*background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    opacity: 0.55s ease;*/
 }
 
 #hamburger span:first-child {
@@ -610,7 +610,7 @@ summary {
     list-style: none;
     display: flex;
     align-items: center;
-    padding: var(--header-padding);
+    /*padding: var(--header-padding);*/
 }
 
 summary:hover {
