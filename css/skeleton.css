@@ -623,17 +623,21 @@ there.
 
     .reserva {
         padding-bottom: 20px;
-        padding-right: 20px;
+        /*padding-right: 20px;*/
     }
 
     .contacto {
-        margin: 0 1em 1em 1em;
+        /*margin: 0 1em 1em 1em;*/
         min-height: 350px;
         max-width: 450px;
         word-break: break-word;
     }
 
+    .location-mapa-google {
+        min-width: calc(350px + 3px);
+    }
     .mapa-google {
+        min-width: 350px;
         margin: 0 1em 1em 1em;
     }
 
@@ -663,6 +667,14 @@ there.
         left: 0;
     }
 
+    .video-text h2 {
+        text-align: left;
+    }
+
+    .videobox {
+        min-width: calc(10% /*margin of video */ + 350px /* size of video*/);
+    }
+
     .gameplay .block {
         padding: 4% 0 4% 4%;
     }
@@ -682,7 +694,7 @@ there.
     }
 
     .mapa-google {
-        min-width: 400px;
+        min-width: 350px;
     }
 
     .header-logoimg-mobile {
@@ -690,6 +702,7 @@ there.
     }
 
     .header-logoimg {
+        width: 70%;
         display: block;
     }
 
