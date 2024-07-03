@@ -520,6 +520,7 @@ video {
 .location-mapa-google {
     text-align: center;
     padding: 0 3px;
+    min-width: 100%; /*so that it aligns*/
 }
 
 .mapa-google {
@@ -533,6 +534,8 @@ video {
     background-color: rgb(52, 67, 249);
     border-radius: 10px;
     color: rgb(255, 250, 255);
+    min-width: 100%; /*so that it aligns*/
+
 }
 
 .contacto .icon {

@@ -629,13 +629,10 @@ there.
     .contacto {
         /*margin: 0 1em 1em 1em;*/
         min-height: 350px;
-        max-width: 450px;
+        /*max-width: 450px;*/
         word-break: break-word;
     }
 
-    .location-mapa-google {
-        min-width: calc(350px + 3px);
-    }
     .mapa-google {
         min-width: 350px;
         margin: 0 1em 1em 1em;
@@ -658,22 +655,13 @@ there.
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-    video {
-        margin-left: 10%;
-        margin-right: 5%;
-        float: left;
-        position: relative;
-        top: -100px;
-        left: 0;
-    }
-
-    .video-text h2 {
-        text-align: left;
-    }
-
     .videobox {
-        min-width: calc(10% /*margin of video */ + 350px /* size of video*/);
+        min-width: 100%; /*To make sure that text is centered*/
     }
+
+    .video-text {
+        min-width: 100%; /*To make sure that text is centered*/
+    };
 
     .gameplay .block {
         padding: 4% 0 4% 4%;
@@ -714,7 +702,15 @@ there.
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+    .contacto {
+        min-width: 0;
+    }
+
+    .location-mapa-google {
+        min-width: 0;
+    }
 }
+
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
@@ -724,6 +720,28 @@ there.
 
     .mapa-google {
     }
+}
+
+@media (min-width: 1150px) {
+    video {
+        margin-left: 10%;
+        margin-right: 5%;
+        float: left;
+        position: relative;
+        top: -100px;
+        left: 0;
+    }
+
+    .video-text h2 {
+        text-align: left;
+    }
+
+    .videobox {
+        min-width: calc(10% /*margin of video */ + 350px /* size of video*/);
+    }
+    .video-text {
+        min-width: 0; /*Reset so that it aligns*/
+    };
 }
 
 
