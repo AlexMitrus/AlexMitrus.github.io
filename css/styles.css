@@ -624,6 +624,11 @@ Cookie box css
     background-color: rgb(10, 9, 8);
 }
 
+
+.faqs a {
+    color: rgb(253, 230, 26);
+    font-weight: bold;
+}
 /* FAQs Accordian */
 
 .accordion-container {
@@ -741,4 +746,33 @@ details[open] .accordion-icon svg {
     margin: 0 auto;
     max-width: 80%;
     margin-bottom: 4em;
+}
+
+.terminos-y-condiciones {
+    color: white;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 4em;
+}
+
+.gratitude-text {
+    color: white;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 4em;
+}
+
+.terminos-y-condiciones h1 {
+    font-size: 3em;
+    padding: 0;
+}
+
+.agradecimiento-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.agradecimiento-footer.footer {
+    margin-top: auto;
 }
