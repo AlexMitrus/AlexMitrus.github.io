@@ -43,12 +43,15 @@
         var booking_id = getParameterByName('booking_id');
         var client_name = getParameterByName('client_name');
         var total = getParameterByName('total');
+        var client_email = getParameterByName('client_email');
+        
 
         window.onload = function () {
             document.getElementById('product_name').innerText = product_name;
             document.getElementById('booking_id').innerText = booking_id;
             document.getElementById('client_name').innerText = client_name;
             document.getElementById('total').innerText = total;
+            document.getElementById('client_email').innerText = client_email;
         };</script>
 </head>
 <body>
@@ -81,6 +84,7 @@
         <section class="gratitude-text">
             <h1>Gracias por tu compra <span id="client_name"></span></h1>
             <p>Te hemos enviado un email con toda la información</p>
+            <p>Email: <span id="client_email"></span></p>
             <p>Juego: <span id="product_name"></span></p>
             <p>Nº de reserva: <span id="booking_id"></span></p>
             <p>Total: <span id="total"></span>€</p>
